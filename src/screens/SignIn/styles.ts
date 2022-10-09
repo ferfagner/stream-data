@@ -2,6 +2,7 @@ import { RectButton } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 import { getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { MotiView } from 'moti';
+import {TouchableOpacity} from 'react-native'
 
 export const Container = styled(MotiView)`
   flex: 1;
@@ -51,7 +52,7 @@ export const Description = styled.Text`
   color: ${props => props.theme.colors.white};
 `;
 
-export const SignInButton = styled(RectButton)`
+export const SignInButton = styled(TouchableOpacity)`
   margin-top: 40px;
 
   background-color: ${props => props.theme.colors.purple};
